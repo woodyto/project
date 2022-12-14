@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<!-- Latest compiled JavaScript -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+	<!-- Fontawesome kitcode -->
+	<script src="https://kit.fontawesome.com/ad2de9e858.js" crossorigin="anonymous"></script>
+	<!-- Bootstrap Font Icon CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+	<!-- Fonts Link -->
+	<!-- Jquery CDN-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<!-- Date picker cdn-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js" integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" integrity="sha512-mSYUmp1HYZDFaVKK//63EcZq4iFWFjxSL+Z3T/aCt4IO9Cejm03q3NKKYN6pFQzY0SBOr8h+eCIAZHPXcpZaNw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.standalone.min.css" integrity="sha512-TQQ3J4WkE/rwojNFo6OJdyu6G8Xe9z8rMrlF9y7xpFbQfW5g8aSWcygCQ4vqRiJqFsDsE1T6MoAOMJkFXlrI9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker3.min.css" integrity="sha512-rxThY3LYIfYsVCWPCW9dB0k+e3RZB39f23ylUYTEuZMDrN/vRqLdaCBo/FbvVT6uC2r0ObfPzotsfKF9Qc5W5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Faster+One&family=Montserrat:wght@400;500;700;800;900&family=Roboto&display=swap" rel="stylesheet">
+	<style>
+		/* Thay đổi css của datepicker tại đây */
+		#calendar_picker .table-condensed {
+			width : 100%;
+		}
+
+		#calendar_picker .datepicker-inline {
+			width : 100% !important;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="header-wrapper">
+		<div class="wrapper">
+			<header class="nav">
+				<a href="/html3/index.html" class="logo">
+					<img src="img/Brands_logo/New Logo FollowBet-1.svg" alt="logo 4llowbet">
+				</a>
+		
+
+				<div class="nav-right">
+					<ul class="nav-right-content">
+						<li class="content-list"><a class="active" href="">PREDICTION</a></li>
+						<li class="content-list"><a href="">LIVESCORES</a></li>
+						<li class="content-list"><a href="">NEWS</a></li>
+						<li class="content-list"><a href="">INJURY</a></li>
+						<li class="content-list"><a href="">RANKINGS</a></li>
+					</ul>
+				</div>
+				<div class="sub-nav">
+					<div class="right-sub-nav">
+						<!---->
+						<div class="favourites">
+							<a href="" class="favouirtes1">Favourites</a>
+						</div>
+					</div>
+				</div>
+			</header>
+		</div>
+	</div>
+	<div class="adswrapper">	
+		<div class="wrapper">
+			<div class="adsbox">
+				<a href=""><img src="img/Ads_image/adstop.png" alt="adsvertise" class="adstop"></a>
+			</div>
+		</div>
+	</div>	
+	<div class="setting-wrapper">
+		<div class="wrapper">
+				<div class="settingbox">
+					<div class="langbox">
+						<a href="" class="lbx">	
+							<img class="lbx" src="img/Country_flags/england-flag.png" alt="england_flag">
+							<p class="lang1 lbx">EN</p>
+							<i class="bi bi-chevron-down lbx"></i>
+						</a>
+					</div>
+					<i class="bi bi-gear-fill"></i>
+				</div>
+		</div>
+	</div>
+	<div class="mainbar-wrapper">	
+		<div class="wrapper wrapper_sss">
+			<!-- left-sidebar  -->
+				<div class="leftbar">
+					<div class="topleagues">
+						<p>Top Leagues</p>
+						<a href=""><img src="img/Another_logo/World-cup_logo.png"> World Cup</a>
+						<a href=""><img src="img/Leagues_logo/UEFA-Champions-League.png"> UEFA Champions League</a>
+						<a href=""><img src="img/Leagues_logo/UEFA-Europa-League.png"> UEFA Europa League</a>
+						<a href=""><img src="img/Leagues_logo/UEFA-Europa-Conference-League.png"> UEFA Europa Conference League</a>
+						<a href=""><img src="img/Leagues_logo/England-Premier-League.png"> Premier League</a>
+						<a href=""><img src="img/Leagues_logo/Spain-Laliga.png"> LaLiga</a>
+						<a href=""><img src="img/Leagues_logo/Italy-SerieA.png"> Serie A</a>
+						<a href=""><img src="img/Leagues_logo/Germany-Bundesliga.png"> Bundesliga</a>
+						<a href=""><img src="img/Leagues_logo/France-Ligue1.png"> Ligue 1</a>
+					</div>
+					<div class="adsbox2">
+						<a href=""><img src="img/Ads_image/VN.gif" alt=""></a>
+					</div>
+					<div class="rankings">
+						<p>Rankings</p>
+						<a href=""><img src="img/Another_logo/FIFA_logo1.webp"> FIFA Rankings</a>
+						<a href=""><img src="img/Another_logo/UEFA_logo1.webp"> UEFA Rankings</a>
+					</div>
+					<div class="all-leagues">
+						<p>All Leagues</p>
+						<div class="searchbox2">
+							<i class="bi bi-filter"></i>
+							<input class="input2" type="text" placeholder="Filter">
+						</div>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/south-america.png"> South America</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/north-and-central-america.png"> North & Central America</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/oceania.png"> Oceania</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/asia.png"> Asia</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/africa.png"> Africa</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/europe.png"> Europe</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/world.webp"> World</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/albania-flag.png"> Albania</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/algeria-flag.png"> Algeria</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/argentina-flag.png"> Argentina</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/armenia-flag.png"> Armenia</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/australia-flag.png"> Australia</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/austria-flag.png"> Austria</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/azerbaijan-flag.png"> Azerbaijan</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/bahrain-flag.png"> Bahrain</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/bangladesh-flag.png"> Bangladesh</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/belarus-flag.png"> Belarus</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/belgium-flag.png"> Belgium</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/bolivia-flag.png"> Bolivia</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/bosnia&herzegovina-flag.png"> Bosnia & Herzegovina</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/botswana-flag.png"> Botswana</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/brazil-flag.png"> Brazil</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/brunei-flag.png"> Brunei</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/bulgaria-flag.png"> Bulgaria</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/burundi-flag.png"> Burundi</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/cambodia-flag.png"> Cambodia</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/cameroon-flag.png"> Cameroon</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/canada-flag.png"> Canada</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/cape-verde-flag.png"> Cape Verde</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/chile-flag.png"> Chile</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/china-flag.png"> China</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/colombia-flag.png"> Colombia</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/congo-flag.png"> Congo Republic</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/costa-rica-flag.png"> Costa Rica</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/croatia-flag.png"> Croatia</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/curacao-flag.png"> Curacao</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/cyprus-flag.png"> Cyprus</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/czech-republic-flag.png"> Czech Republic</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/denmark-flag.png"> Denmark</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/ecuador-flag.png"> Ecuador</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/egypt-flag.png"> Egypt</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/el-salvador-flag.png"> El Salvador</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/england-flag.png"> England</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/estonia-flag.png"> Estonia</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/ethiopia-flag.png"> Ethiopia</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/faroe-islands-flag.png"> Faroe Islands</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/fiji-flag.png"> Fiji</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/finland-flag.png"> Finland</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/france-flag.png"> France</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/gabon-flag.png"> Gabon</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/gambia-flag.png"> Gambia</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/georgia-flag.png"> Georgia</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/germany-flag.png"> Germany</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/ghana-flag.png"> Ghana</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/gibraltar-flag.png"> Gibraltar</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/greece-flag.png"> Greece</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/grenada-flag.png"> Grenada</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/guatemala-flag.png"> Guatemala</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/guinea-flag.png"> Guinea</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/honduras-flag.png"> Honduras</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/hongkong-flag.png"> Hong Kong</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/hungary-flag.png"> Hungary</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/iceland-flag.png"> Iceland</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/india-flag.png"> India</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/indonesia-flag.png"> Indonesia</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/iran-flag.png"> Iran</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/ireland-flag.png"> Ireland</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/israel-flag.png"> Israel</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/italy-flag.png"> Italy</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/ivory-coast-flag.png"> Ivory Coast</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/jamaica-flag.png"> Jamaica</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/japan-flag.png"> Japan</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/jordan-flag.png"> Jordan</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/kazakhstan-flag.png"> Kazakhstan</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/kenya-flag.png"> Kenya</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/kosovo-flag.png"> Kosovo</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/kuwait-flag.png"> Kuwait</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/laos-flag.png"> Laos</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/latvia-flag.png"> Latvia</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/lebanon-flag.png"> Lebanon</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/libya-flag.png"> Libya</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/liechtenstein-flag.png"> Liechtenstein</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/lithuania-flag.png"> Lithuania</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/luxembourg-flag.png"> Luxembourg</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/malaysia-flag.png"> Malaysia</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/malta-flag.png"> Malta</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/mauritius-flag.png"> Mauritius</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/mexico-flag.png"> Mexico</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/moldova-flag.png"> Moldova</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/mongolia-flag.png"> Mongolia</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/montenegro-flag.png"> Montenegro</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/morocco-flag.png"> Morocco</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/mozambique-flag.png"> Mozambique</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/myanmar-flag.png"> Myanmar</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/netherlands-flag.png"> Netherlands</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/new-zealand-flag.png"> New Zealand</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/nicaragua-flag.png"> Nicaragua</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/north-macedonia-flag.png"> North Macedonia</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/northern-ireland-flag.png"> Northern Ireland</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/norway-flag.png"> Norway</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/oman-flag.png"> Oman</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/pakistan-flag.png"> Pakistan</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/palestine-flag.png"> Palestine</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/panama-flag.png"> Panama</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/paraguay-flag.png"> Paraguay</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/peru-flag.png"> Peru</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/philippines-flag.png"> Philippines</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/poland-flag.png"> Poland</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/portugal-flag.png"> Portugal</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/qatar-flag.png"> Qatar</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/romania-flag.png"> Romania</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/russia-flag.png"> Russia</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/rwanda-flag.png"> Rwanda</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/samoa-flag.png"> Samoa</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/san marino-flag.png"> San Marino</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/sao tome and principe-flag.png"> Sao Tome and Principe</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/saudi-arabia-flag.png"> Saudi Arabia</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/scotland-flag.png"> Scotland</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/senegal-flag.png"> Senegal</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/serbia-flag.png"> Serbia</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/sierra-leone-flag.png"> Sierra Leone</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/singapore-flag.png"> Singapore</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/slovakia-flag.png"> Slovakia</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/slovenia-flag.png"> Slovenia</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/solomon-islands-flag.png"> Solomon Islands</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/south-africa-flag.png"> South Africa</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/south-korea-flag.png"> South Korea</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/spain-flag.png"> Spain</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/suriname-flag.png"> Suriname</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/swaziland-flag.png"> Swaziland</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/sweden-flag.png"> Sweden</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/switzerland-flag.png"> Switzerland</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/syria-flag.png"> Syria</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/tajikistan-flag.png"> Tajikistan</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/tanzania-flag.png"> Tanzania</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/thailand-flag.png"> Thailand</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/timor-leste-flag.png"> Timor Leste</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/trinidad-and-tobago-flag.png"> Trinidad and Tobago</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/tunisia-flag.png"> Tunisia</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/turkey-flag.png"> Turkey</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/turkmenistan-flag.png"> Turkmenistan</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/uganda-flag.png"> Uganda</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/ukraine-flag.png"> Ukraine</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/united-arab-emirates-flag.png"> United Arab Emirates</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/uruguay-flag.png"> Uruguay</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/usa-flag.png"> USA</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/uzbekistan-flag.png"> Uzbekistan</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/venezuela-flag.png"> Venezuela</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/vietnam-flag.png"> Vietnam</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/wales-flag.png"> Wales</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/zambia-flag.png"> Zambia</div></a>
+						<a href=""><div><i class="bi bi-chevron-down"></i><img src="img/Country_flags/zimbabwe-flag.png"> Zimbabwe</div></a>
+					</div>
+				</div>	
+			<!-- main-content  -->
+				<div class="main-content">
+					<div class="injury-page-wrapper">
+                        <div class="h2h-info-bar__title-wrapper">
+                                <div class="h2h-info-bar__content-title">
+                                      <div class="h2h-info-bar__content-title-big"> INJURY & SUSPENSION </div>
+                                 </div>
+                             </div>
+                        <div class="injury-page__title-wrapper">
+                           <div class="injury-page__title-content">
+                                <div class="injury-page__title-content-league-name"> PREMIER LEAGUE </div>
+                                <div class="injury-page__title-content-league-filter">
+                                    <span> Premier League </span>
+                                    <div><i class="bi bi-chevron-down"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="injury-page__team-main-wrapper">
+                        <div class="injury-page__team-wrapper">
+                           <div class="injury-page__team-title-content"> Crystal Palace </div>
+                        </div>
+                        <div class="inj-container inj-titles">
+                           <span class="inj-type"> Type </span>
+                           <span class="inj-player"> Name </span>
+                           <span class="inj-position h-sm"> Pos. </span>
+                           <span class="inj-game h-sm"> Matches </span>
+                           <span class="inj-goals h-sm"> Goals </span>
+                           <span class="inj-assists h-sm"> Assists </span>
+                           <span class="inj-info h-sm"> Info </span>
+                           <span class="inj-return h-sm"> Expected Return </span>
+                        </div>
+                        <div class="inj-row">
+                           <div class="inj-container">
+                              <span class="inj-type injury-questionmark"></span>
+                              <span class="inj-player"> Neto </span>
+                              <span class="inj-position h-sm"> G </span>
+                              <span class="inj-game h-sm"> 8 </span>
+                              <span class="inj-goals h-sm"> 0 </span>
+                              <span class="inj-assists h-sm"> 0 </span>
+                              <span class="inj-info h-sm"> Lack of fitness </span>
+                              <span class="inj-return h-sm"> Doubtful </span>
+                           </div>
+                        </div>
+                        <div class="inj-row">
+                           <div class="inj-container">
+                              <span class="inj-type redcard"></span>
+                              <span class="inj-player"> Neto </span>
+                              <span class="inj-position h-sm"> G </span>
+                              <span class="inj-game h-sm"> 8 </span>
+                              <span class="inj-goals h-sm"> 0 </span>
+                              <span class="inj-assists h-sm"> 0 </span>
+                              <span class="inj-info h-sm"> Suspend </span>
+                              <span class="inj-return h-sm"> 1 Game </span>
+                           </div>
+                        </div>
+                        <div class="inj-row">
+                           <div class="inj-container">
+                              <span class="inj-type injury-plus"></span>
+                              <span class="inj-player"> Neto </span>
+                              <span class="inj-position h-sm"> G </span>
+                              <span class="inj-game h-sm"> 8 </span>
+                              <span class="inj-goals h-sm"> 0 </span>
+                              <span class="inj-assists h-sm"> 0 </span>
+                              <span class="inj-info h-sm"> Hamstring </span>
+                              <span class="inj-return h-sm"> Late December </span>
+                           </div>
+                        </div>
+                        </div>
+                        <!---->
+                        <div class="injury-page__team-main-wrapper">
+                        <div class="injury-page__team-wrapper">
+                           <div class="injury-page__team-title-content"> Crystal Palace </div>
+                        </div>
+                        <div class="inj-container inj-titles">
+                           <span class="inj-type"> Type </span>
+                           <span class="inj-player"> Name </span>
+                           <span class="inj-position h-sm"> Pos. </span>
+                           <span class="inj-game h-sm"> Matches </span>
+                           <span class="inj-goals h-sm"> Goals </span>
+                           <span class="inj-assists h-sm"> Assists </span>
+                           <span class="inj-info h-sm"> Info </span>
+                           <span class="inj-return h-sm"> Expected Return </span>
+                        </div>
+                        <div class="inj-row">
+                           <div class="inj-container">
+                              <span class="inj-type injury-questionmark"></span>
+                              <span class="inj-player"> Neto </span>
+                              <span class="inj-position h-sm"> G </span>
+                              <span class="inj-game h-sm"> 8 </span>
+                              <span class="inj-goals h-sm"> 0 </span>
+                              <span class="inj-assists h-sm"> 0 </span>
+                              <span class="inj-info h-sm"> Lack of fitness </span>
+                              <span class="inj-return h-sm"> Doubtful </span>
+                           </div>
+                        </div>
+                        <div class="inj-row">
+                           <div class="inj-container">
+                              <span class="inj-type redcard"></span>
+                              <span class="inj-player"> Neto </span>
+                              <span class="inj-position h-sm"> G </span>
+                              <span class="inj-game h-sm"> 8 </span>
+                              <span class="inj-goals h-sm"> 0 </span>
+                              <span class="inj-assists h-sm"> 0 </span>
+                              <span class="inj-info h-sm"> Suspend </span>
+                              <span class="inj-return h-sm"> 1 Game </span>
+                           </div>
+                        </div>
+                        <div class="inj-row">
+                           <div class="inj-container">
+                              <span class="inj-type injury-plus"></span>
+                              <span class="inj-player"> Neto </span>
+                              <span class="inj-position h-sm"> G </span>
+                              <span class="inj-game h-sm"> 8 </span>
+                              <span class="inj-goals h-sm"> 0 </span>
+                              <span class="inj-assists h-sm"> 0 </span>
+                              <span class="inj-info h-sm"> Hamstring </span>
+                              <span class="inj-return h-sm"> Late December </span>
+                           </div>
+                        </div>
+                        </div>
+                        <!---->
+                        <!---->
+                        <div class="injury-page__team-main-wrapper">
+                        <div class="injury-page__team-wrapper">
+                           <div class="injury-page__team-title-content"> Crystal Palace </div>
+                        </div>
+                        <div class="inj-container inj-titles">
+                           <span class="inj-type"> Type </span>
+                           <span class="inj-player"> Name </span>
+                           <span class="inj-position h-sm"> Pos. </span>
+                           <span class="inj-game h-sm"> Matches </span>
+                           <span class="inj-goals h-sm"> Goals </span>
+                           <span class="inj-assists h-sm"> Assists </span>
+                           <span class="inj-info h-sm"> Info </span>
+                           <span class="inj-return h-sm"> Expected Return </span>
+                        </div>
+                        <div class="inj-row">
+                           <div class="inj-container">
+                              <span class="inj-type injury-questionmark"></span>
+                              <span class="inj-player"> Neto </span>
+                              <span class="inj-position h-sm"> G </span>
+                              <span class="inj-game h-sm"> 8 </span>
+                              <span class="inj-goals h-sm"> 0 </span>
+                              <span class="inj-assists h-sm"> 0 </span>
+                              <span class="inj-info h-sm"> Lack of fitness </span>
+                              <span class="inj-return h-sm"> Doubtful </span>
+                           </div>
+                        </div>
+                        <div class="inj-row">
+                           <div class="inj-container">
+                              <span class="inj-type redcard"></span>
+                              <span class="inj-player"> Neto </span>
+                              <span class="inj-position h-sm"> G </span>
+                              <span class="inj-game h-sm"> 8 </span>
+                              <span class="inj-goals h-sm"> 0 </span>
+                              <span class="inj-assists h-sm"> 0 </span>
+                              <span class="inj-info h-sm"> Suspend </span>
+                              <span class="inj-return h-sm"> 1 Game </span>
+                           </div>
+                        </div>
+                        <div class="inj-row">
+                           <div class="inj-container">
+                              <span class="inj-type injury-plus"></span>
+                              <span class="inj-player"> Neto </span>
+                              <span class="inj-position h-sm"> G </span>
+                              <span class="inj-game h-sm"> 8 </span>
+                              <span class="inj-goals h-sm"> 0 </span>
+                              <span class="inj-assists h-sm"> 0 </span>
+                              <span class="inj-info h-sm"> Hamstring </span>
+                              <span class="inj-return h-sm"> Late December </span>
+                           </div>
+                        </div>
+                        </div>
+                        <!---->
+                        <!---->
+                        <div class="injury-page__team-main-wrapper">
+                        <div class="injury-page__team-wrapper">
+                           <div class="injury-page__team-title-content"> Crystal Palace </div>
+                        </div>
+                        <div class="inj-container inj-titles">
+                           <span class="inj-type"> Type </span>
+                           <span class="inj-player"> Name </span>
+                           <span class="inj-position h-sm"> Pos. </span>
+                           <span class="inj-game h-sm"> Matches </span>
+                           <span class="inj-goals h-sm"> Goals </span>
+                           <span class="inj-assists h-sm"> Assists </span>
+                           <span class="inj-info h-sm"> Info </span>
+                           <span class="inj-return h-sm"> Expected Return </span>
+                        </div>
+                        <div class="inj-row">
+                           <div class="inj-container">
+                              <span class="inj-type injury-questionmark"></span>
+                              <span class="inj-player"> Neto </span>
+                              <span class="inj-position h-sm"> G </span>
+                              <span class="inj-game h-sm"> 8 </span>
+                              <span class="inj-goals h-sm"> 0 </span>
+                              <span class="inj-assists h-sm"> 0 </span>
+                              <span class="inj-info h-sm"> Lack of fitness </span>
+                              <span class="inj-return h-sm"> Doubtful </span>
+                           </div>
+                        </div>
+                        <div class="inj-row">
+                           <div class="inj-container">
+                              <span class="inj-type redcard"></span>
+                              <span class="inj-player"> Neto </span>
+                              <span class="inj-position h-sm"> G </span>
+                              <span class="inj-game h-sm"> 8 </span>
+                              <span class="inj-goals h-sm"> 0 </span>
+                              <span class="inj-assists h-sm"> 0 </span>
+                              <span class="inj-info h-sm"> Suspend </span>
+                              <span class="inj-return h-sm"> 1 Game </span>
+                           </div>
+                        </div>
+                        <div class="inj-row">
+                           <div class="inj-container">
+                              <span class="inj-type injury-plus"></span>
+                              <span class="inj-player"> Neto </span>
+                              <span class="inj-position h-sm"> G </span>
+                              <span class="inj-game h-sm"> 8 </span>
+                              <span class="inj-goals h-sm"> 0 </span>
+                              <span class="inj-assists h-sm"> 0 </span>
+                              <span class="inj-info h-sm"> Hamstring </span>
+                              <span class="inj-return h-sm"> Late December </span>
+                           </div>
+                        </div>
+                        </div>
+                        <!---->
+                        <!---->
+                        <div class="injury-page__team-main-wrapper">
+                        <div class="injury-page__team-wrapper">
+                           <div class="injury-page__team-title-content"> Crystal Palace </div>
+                        </div>
+                        <div class="inj-container inj-titles">
+                           <span class="inj-type"> Type </span>
+                           <span class="inj-player"> Name </span>
+                           <span class="inj-position h-sm"> Pos. </span>
+                           <span class="inj-game h-sm"> Matches </span>
+                           <span class="inj-goals h-sm"> Goals </span>
+                           <span class="inj-assists h-sm"> Assists </span>
+                           <span class="inj-info h-sm"> Info </span>
+                           <span class="inj-return h-sm"> Expected Return </span>
+                        </div>
+                        <div class="inj-row">
+                           <div class="inj-container">
+                              <span class="inj-type injury-questionmark"></span>
+                              <span class="inj-player"> Neto </span>
+                              <span class="inj-position h-sm"> G </span>
+                              <span class="inj-game h-sm"> 8 </span>
+                              <span class="inj-goals h-sm"> 0 </span>
+                              <span class="inj-assists h-sm"> 0 </span>
+                              <span class="inj-info h-sm"> Lack of fitness </span>
+                              <span class="inj-return h-sm"> Doubtful </span>
+                           </div>
+                        </div>
+                        <div class="inj-row">
+                           <div class="inj-container">
+                              <span class="inj-type redcard"></span>
+                              <span class="inj-player"> Neto </span>
+                              <span class="inj-position h-sm"> G </span>
+                              <span class="inj-game h-sm"> 8 </span>
+                              <span class="inj-goals h-sm"> 0 </span>
+                              <span class="inj-assists h-sm"> 0 </span>
+                              <span class="inj-info h-sm"> Suspend </span>
+                              <span class="inj-return h-sm"> 1 Game </span>
+                           </div>
+                        </div>
+                        <div class="inj-row">
+                           <div class="inj-container">
+                              <span class="inj-type injury-plus"></span>
+                              <span class="inj-player"> Neto </span>
+                              <span class="inj-position h-sm"> G </span>
+                              <span class="inj-game h-sm"> 8 </span>
+                              <span class="inj-goals h-sm"> 0 </span>
+                              <span class="inj-assists h-sm"> 0 </span>
+                              <span class="inj-info h-sm"> Hamstring </span>
+                              <span class="inj-return h-sm"> Late December </span>
+                           </div>
+                        </div>
+                        </div>
+                        <!---->
+                        <!---->
+                        <div class="injury-page__team-main-wrapper">
+                        <div class="injury-page__team-wrapper">
+                           <div class="injury-page__team-title-content"> Crystal Palace </div>
+                        </div>
+                        <div class="inj-container inj-titles">
+                           <span class="inj-type"> Type </span>
+                           <span class="inj-player"> Name </span>
+                           <span class="inj-position h-sm"> Pos. </span>
+                           <span class="inj-game h-sm"> Matches </span>
+                           <span class="inj-goals h-sm"> Goals </span>
+                           <span class="inj-assists h-sm"> Assists </span>
+                           <span class="inj-info h-sm"> Info </span>
+                           <span class="inj-return h-sm"> Expected Return </span>
+                        </div>
+                        <div class="inj-row">
+                           <div class="inj-container">
+                              <span class="inj-type injury-questionmark"></span>
+                              <span class="inj-player"> Neto </span>
+                              <span class="inj-position h-sm"> G </span>
+                              <span class="inj-game h-sm"> 8 </span>
+                              <span class="inj-goals h-sm"> 0 </span>
+                              <span class="inj-assists h-sm"> 0 </span>
+                              <span class="inj-info h-sm"> Lack of fitness </span>
+                              <span class="inj-return h-sm"> Doubtful </span>
+                           </div>
+                        </div>
+                        <div class="inj-row">
+                           <div class="inj-container">
+                              <span class="inj-type redcard"></span>
+                              <span class="inj-player"> Neto </span>
+                              <span class="inj-position h-sm"> G </span>
+                              <span class="inj-game h-sm"> 8 </span>
+                              <span class="inj-goals h-sm"> 0 </span>
+                              <span class="inj-assists h-sm"> 0 </span>
+                              <span class="inj-info h-sm"> Suspend </span>
+                              <span class="inj-return h-sm"> 1 Game </span>
+                           </div>
+                        </div>
+                        <div class="inj-row">
+                           <div class="inj-container">
+                              <span class="inj-type injury-plus"></span>
+                              <span class="inj-player"> Neto </span>
+                              <span class="inj-position h-sm"> G </span>
+                              <span class="inj-game h-sm"> 8 </span>
+                              <span class="inj-goals h-sm"> 0 </span>
+                              <span class="inj-assists h-sm"> 0 </span>
+                              <span class="inj-info h-sm"> Hamstring </span>
+                              <span class="inj-return h-sm"> Late December </span>
+                           </div>
+                        </div>
+                        </div>
+                        <!---->
+                        <!---->
+                        <div class="injury-page__team-main-wrapper">
+                        <div class="injury-page__team-wrapper">
+                           <div class="injury-page__team-title-content"> Crystal Palace </div>
+                        </div>
+                        <div class="inj-container inj-titles">
+                           <span class="inj-type"> Type </span>
+                           <span class="inj-player"> Name </span>
+                           <span class="inj-position h-sm"> Pos. </span>
+                           <span class="inj-game h-sm"> Matches </span>
+                           <span class="inj-goals h-sm"> Goals </span>
+                           <span class="inj-assists h-sm"> Assists </span>
+                           <span class="inj-info h-sm"> Info </span>
+                           <span class="inj-return h-sm"> Expected Return </span>
+                        </div>
+                        <div class="inj-row">
+                           <div class="inj-container">
+                              <span class="inj-type injury-questionmark"></span>
+                              <span class="inj-player"> Neto </span>
+                              <span class="inj-position h-sm"> G </span>
+                              <span class="inj-game h-sm"> 8 </span>
+                              <span class="inj-goals h-sm"> 0 </span>
+                              <span class="inj-assists h-sm"> 0 </span>
+                              <span class="inj-info h-sm"> Lack of fitness </span>
+                              <span class="inj-return h-sm"> Doubtful </span>
+                           </div>
+                        </div>
+                        <div class="inj-row">
+                           <div class="inj-container">
+                              <span class="inj-type redcard"></span>
+                              <span class="inj-player"> Neto </span>
+                              <span class="inj-position h-sm"> G </span>
+                              <span class="inj-game h-sm"> 8 </span>
+                              <span class="inj-goals h-sm"> 0 </span>
+                              <span class="inj-assists h-sm"> 0 </span>
+                              <span class="inj-info h-sm"> Suspend </span>
+                              <span class="inj-return h-sm"> 1 Game </span>
+                           </div>
+                        </div>
+                        <div class="inj-row">
+                           <div class="inj-container">
+                              <span class="inj-type injury-plus"></span>
+                              <span class="inj-player"> Neto </span>
+                              <span class="inj-position h-sm"> G </span>
+                              <span class="inj-game h-sm"> 8 </span>
+                              <span class="inj-goals h-sm"> 0 </span>
+                              <span class="inj-assists h-sm"> 0 </span>
+                              <span class="inj-info h-sm"> Hamstring </span>
+                              <span class="inj-return h-sm"> Late December </span>
+                           </div>
+                        </div>
+                        </div>
+                        <!---->
+                        <!---->
+                        <div class="injury-page__team-main-wrapper">
+                        <div class="injury-page__team-wrapper">
+                           <div class="injury-page__team-title-content"> Everton </div>
+                        </div>
+                        <div class="inj-container inj-titles">
+                           <span class="inj-type"> Type </span>
+                           <span class="inj-player"> Name </span>
+                           <span class="inj-position h-sm"> Pos. </span>
+                           <span class="inj-game h-sm"> Matches </span>
+                           <span class="inj-goals h-sm"> Goals </span>
+                           <span class="inj-assists h-sm"> Assists </span>
+                           <span class="inj-info h-sm"> Info </span>
+                           <span class="inj-return h-sm"> Expected Return </span>
+                        </div>
+                        <div class="inj-row">
+                           <div class="inj-container">
+                              <span class="inj-type injury-questionmark"></span>
+                              <span class="inj-player"> Neto </span>
+                              <span class="inj-position h-sm"> G </span>
+                              <span class="inj-game h-sm"> 8 </span>
+                              <span class="inj-goals h-sm"> 0 </span>
+                              <span class="inj-assists h-sm"> 0 </span>
+                              <span class="inj-info h-sm"> Lack of fitness </span>
+                              <span class="inj-return h-sm"> Doubtful </span>
+                           </div>
+                        </div>
+                        <div class="inj-row">
+                           <div class="inj-container">
+                              <span class="inj-type redcard"></span>
+                              <span class="inj-player"> Neto </span>
+                              <span class="inj-position h-sm"> G </span>
+                              <span class="inj-game h-sm"> 8 </span>
+                              <span class="inj-goals h-sm"> 0 </span>
+                              <span class="inj-assists h-sm"> 0 </span>
+                              <span class="inj-info h-sm"> Suspend </span>
+                              <span class="inj-return h-sm"> 1 Game </span>
+                           </div>
+                        </div>
+                        <div class="inj-row">
+                           <div class="inj-container">
+                              <span class="inj-type injury-plus"></span>
+                              <span class="inj-player"> Neto </span>
+                              <span class="inj-position h-sm"> G </span>
+                              <span class="inj-game h-sm"> 8 </span>
+                              <span class="inj-goals h-sm"> 0 </span>
+                              <span class="inj-assists h-sm"> 0 </span>
+                              <span class="inj-info h-sm"> Hamstring </span>
+                              <span class="inj-return h-sm"> Late December </span>
+                           </div>
+                        </div>
+                        </div>
+                        <!---->
+                     </div>
+                    
+				</div>
+			<!-- right-bar  -->
+				<div class="rightbar">
+					<div class="calendar" id="calendar_picker"><div></div></div>
+					<div class="new-featured">
+						<div class="match-poll-overview-item__header t-uppercase montseratSemiBold"> Featured Match </div>
+						<div class="match-poll-overview-item__body">
+						   <div class="who-will-win-match t-center">
+							  <div class="who-will-win-match__breadcrumbs"><a href="" class=""> Football </a> / <a href="" class="">
+										 World Cup </a>
+							  </div>
+							  <a href="" class="who-will-win-match__match d-flex align-center">
+								 <div class="who-will-win-match__match__team">
+									<div>
+									   <img alt="Argentina" width="40" height="40" src="img/Country_flags/argentina-flag.png">
+									   <span class="who-will-win-match__match__name"> Argentina </span>
+									</div>
+								 </div>
+								 <small class="who-will-win-match__match__date"> 
+									<span> 02:00 </span> 14 Dec.2022
+									<span class="who-will-win-match__match__pred"> 1 </span>
+											 </small>
+								 <div class="who-will-win-match__match__team">
+									<div>
+									   <img alt="Argentina" width="40" height="40" src="img/Country_flags/croatia-flag.png">
+									   <span class="who-will-win-match__match__name"> Croatia </span>
+									</div>
+								 </div>
+							  </a>
+						   </div>
+						</div>
+					</div>
+					<div class="new-featured">
+						<div class="match-poll-overview-item__header t-uppercase montseratSemiBold"> Who will Win? </div>
+						<div class="match-poll-overview-item__poll">
+							<button class="match-poll-overview-item__poll__action">
+								<span class="match-poll0-overview-item__poll__action__icon bg-grey-5">
+									<img alt="Argentina" width="20" height="20" src="img/Country_flags/argentina-flag.png">
+								</span>
+									1.86
+							</button>
+							<button class="match-poll-overview-item__poll__action">
+								<span class="match-poll0-overview-item__poll__action__icon bg-grey-5">
+									<i class="bi bi-x-circle" style="font-size: 20px;"></i>
+								</span>
+									1.86
+							</button>
+							<button class="match-poll-overview-item__poll__action">
+								<span class="match-poll0-overview-item__poll__action__icon bg-grey-5">
+									<img alt="Croatia" width="20" height="20" src="img/Country_flags/croatia-flag.png">
+								</span>
+									1.86
+							</button>
+						</div>
+					</div>
+					<div class="adsbox3">
+						<a href=""><img src="img/Ads_image/ads1.gif"></a>
+					</div>
+					<div class="standing-bar">
+						<p>Premier League Standings</p>
+						<table style="width:100%">
+							<tr>
+							  <th style="width:5%">#</th>
+							  <th style="width:5%"></th>
+							  <th style="width:30%">Team</th>
+							  <th style="width:5%">P</th>
+							  <th style="width:5%">W</th>
+							  <th style="width:5%">D</th>
+							  <th style="width:5%">L</th>
+							  <th style="width:5%">PTS</th>
+							</tr>
+							<tr>
+							  <td class="table-top4">1</td>
+							  <td class="table-logo"><img src="img/Arsenal.svg"></td>
+							  <td class="table-team"><a href=""> Arsenal</a></td>
+							  <td class="table-P table-number">13</td>
+							  <td class="table-W table-number">11</td>
+							  <td class="table-D table-number">1</td>
+							  <td class="table-L table-number">1</td>
+							  <td class="table-pts">34</td>
+							</tr>
+							<tr>
+							  <td class="table-top4">2</td>
+							  <td class="table-logo"><img src="img/Teams_logo/Mancity-logo.png"></td>
+							  <td class="table-team"><a href=""> Manchester City</a></td>
+							  <td class="table-P">13</td>
+							  <td class="table-W">10</td>
+							  <td class="table-D">2</td>
+							  <td class="table-L">1</td>
+							  <td class="table-pts">32</td>
+							</tr>
+							<tr>
+								<td class="table-top4">3</td>
+								<td class="table-logo"><img src="img/Newcastle.svg"></td>
+								<td class="table-team"><a href=""> Newcastle United</a></td>
+								<td class="table-P">14</td>
+								<td class="table-W">7</td>
+								<td class="table-D">6</td>
+								<td class="table-L">1</td>
+								<td class="table-pts">27</td>
+							  </tr>
+							  <tr>
+								<td class="table-top4">4</td>
+								<td class="table-logo"><img src="img/Tottenham.svg"></td>
+								<td class="table-team"><a href=""> Tottenham Hotspur</a></td>
+								<td class="table-P">14</td>
+								<td class="table-W">8</td>
+								<td class="table-D">2</td>
+								<td class="table-L">4</td>
+								<td class="table-pts">26</td>
+							  </tr>
+							  <tr>
+								<td class="table-top5">5</td>
+								<td class="table-logo"><img src="img/Teams_logo/Manutd-logo.png"></td>
+								<td class="table-team"><a href=""> Manchester United</a></td>
+								<td class="table-P">13</td>
+								<td class="table-W">7</td>
+								<td class="table-D">2</td>
+								<td class="table-L">4</td>
+								<td class="table-pts">23</td>
+							  </tr>
+							  <tr>
+								<td class="table-top">6</td>
+								<td class="table-logo"><img src="img/Brighton.svg"></td>
+								<td class="table-team"><a href=""> Brighton & Hove Albion</a></td>
+								<td class="table-P">13</td>
+								<td class="table-W">6</td>
+								<td class="table-D">3</td>
+								<td class="table-L">4</td>
+								<td class="table-pts">21</td>
+							  </tr>
+							  <tr>
+								<td class="table-top">7</td>
+								<td class="table-logo"><img src="img/Chelsea.svg"></td>
+								<td class="table-team"><a href=""> Chelsea</a></td>
+								<td class="table-P">13</td>
+								<td class="table-W">6</td>
+								<td class="table-D">3</td>
+								<td class="table-L">4</td>
+								<td class="table-pts">21</td>
+							  </tr>
+							  <tr>
+								<td class="table-top">8</td>
+								<td class="table-logo"><img src="img/Liverpool.svg"></td>
+								<td class="table-team"><a href=""> Liverpool</a></td>
+								<td class="table-P">13</td>
+								<td class="table-W">5</td>
+								<td class="table-D">4</td>
+								<td class="table-L">4</td>
+								<td class="table-pts">19</td>
+							  </tr>
+							  <tr>
+								<td class="table-top">9</td>
+								<td class="table-logo"><img src="img/Fulham.svg"></td>
+								<td class="table-team"><a href=""> Fulham</a></td>
+								<td class="table-P">14</td>
+								<td class="table-W">5</td>
+								<td class="table-D">4</td>
+								<td class="table-L">5</td>
+								<td class="table-pts">19</td>
+							  </tr>
+							  <tr>
+								<td class="table-top">10</td>
+								<td class="table-logo"><img src="img/Crystal Palace.svg"></td>
+								<td class="table-team"><a href=""> Crystal Palace</a></td>
+								<td class="table-P">13</td>
+								<td class="table-W">5</td>
+								<td class="table-D">4</td>
+								<td class="table-L">5</td>
+								<td class="table-pts">19</td>
+							  </tr>
+							  <tr>
+								<td class="table-top">11</td>
+								<td class="table-logo"><img src="img/Brentford.svg"></td>
+								<td class="table-team"><a href=""> Brentford</a></td>
+								<td class="table-P">14</td>
+								<td class="table-W">3</td>
+								<td class="table-D">7</td>
+								<td class="table-L">4</td>
+								<td class="table-pts">16</td>
+							  </tr>
+							  <tr>
+								<td class="table-top">12</td>
+								<td class="table-logo"><img src="img/Leeds.svg"></td>
+								<td class="table-team"><a href=""> Leeds</a></td>
+								<td class="table-P">13</td>
+								<td class="table-W">4</td>
+								<td class="table-D">3</td>
+								<td class="table-L">6</td>
+								<td class="table-pts">15</td>
+							  </tr>
+							  <tr>
+								<td class="table-top">13</td>
+								<td class="table-logo"><img src="img/Aston Villa.svg"></td>
+								<td class="table-team"><a href=""> Aston Villa</a></td>
+								<td class="table-P">14</td>
+								<td class="table-W">4</td>
+								<td class="table-D">3</td>
+								<td class="table-L">7</td>
+								<td class="table-pts">15</td>
+							  </tr>
+							  <tr>
+								<td class="table-top">14</td>
+								<td class="table-logo"><img src="img/Leicester.svg"></td>
+								<td class="table-team"><a href=""> Leicester City</a></td>
+								<td class="table-P">14</td>
+								<td class="table-W">4</td>
+								<td class="table-D">2</td>
+								<td class="table-L">8</td>
+								<td class="table-pts">14</td>
+							  </tr>
+							  <tr>
+								<td class="table-top">15</td>
+								<td class="table-logo"><img src="img/Westham.svg"></td>
+								<td class="table-team"><a href=""> West Ham</a></td>
+								<td class="table-P">14</td>
+								<td class="table-W">4</td>
+								<td class="table-D">2</td>
+								<td class="table-L">8</td>
+								<td class="table-pts">14</td>
+							  </tr>
+							  <tr>
+								<td class="table-top">16</td>
+								<td class="table-logo"><img src="img/Everton.svg"></td>
+								<td class="table-team"><a href=""> Everton</a></td>
+								<td class="table-P">14</td>
+								<td class="table-W">3</td>
+								<td class="table-D">5</td>
+								<td class="table-L">6</td>
+								<td class="table-pts">14</td>
+							  </tr>
+							  <tr>
+								<td class="table-top">17</td>
+								<td class="table-logo"><img src="img/Bournemouth.svg"></td>
+								<td class="table-team"><a href=""> Bournemouth</a></td>
+								<td class="table-P">14</td>
+								<td class="table-W">3</td>
+								<td class="table-D">4</td>
+								<td class="table-L">7</td>
+								<td class="table-pts">13</td>
+							  </tr>
+							  <tr>
+								<td class="table-top181920">18</td>
+								<td class="table-logo"><img src="img/Southampton.svg"></td>
+								<td class="table-team"><a href=""> Southampton</a></td>
+								<td class="table-P">14</td>
+								<td class="table-W">3</td>
+								<td class="table-D">3</td>
+								<td class="table-L">8</td>
+								<td class="table-pts">12</td>
+							  </tr>
+							  <tr>
+								<td class="table-top181920">19</td>
+								<td class="table-logo"><img src="img/Wolverhampton.svg"></td>
+								<td class="table-team"><a href=""> Wolverhampton</a></td>
+								<td class="table-P">14</td>
+								<td class="table-W">2</td>
+								<td class="table-D">4</td>
+								<td class="table-L">8</td>
+								<td class="table-pts">10</td>
+							  </tr>
+							  <tr>
+								<td class="table-top181920">20</td>
+								<td class="table-logo"><img src="img/Nottingham.svg"></td>
+								<td class="table-team"><a href=""> Nottingham Forest</a></td>
+								<td class="table-P">14</td>
+								<td class="table-W">2</td>
+								<td class="table-D">4</td>
+								<td class="table-L">8</td>
+								<td class="table-pts">10</td>
+							  </tr>
+						  </table>
+					</div>
+					<div class="adsbox4">
+						<a href=""><img src="img/Ads_image/ads2.gif"></a>
+					</div>
+					
+				</div>
+		</div>
+	</div>
+	
+	<div class="footer-wrapper-1">
+		<div class="wrapper">
+			<div class="footer1">
+				<div class="about ft1">
+					<h3>ABOUT</h3>
+					<p>4LLOWBET presents mathematical football predictions generated by computer algorithm on the basis of statistics. Predictions, statistics, live-score, match previews and detailed analysis for more than 1000+ football leagues.</p>
+					<div class="visit">
+						<a href=""><i class="bi bi-facebook"></i></a>
+						<a href=""><i class="bi bi-twitter"></i></a>
+						<a href=""><i class="bi bi-youtube"></i></a>
+						<a href=""><i class="bi bi-instagram"></i></a>
+					</div>
+				</div>
+				<div class="what-is-4llowbet ft1">
+					<h3>WHAT IS 4LLOWBET</h3>
+					<a href="">WHAT IS 4LLOWBET ?</a>
+					<a href="">Terms of use</a>
+					<a href="">Privacy Policy</a>
+					<a href="">Avoid scam</a>
+					<a href="">Contact us</a>
+				</div>
+				<div class="quick-links ft1">
+					<h3>QUICK LINKS OF 4LLOWBET</h3>
+					<a href="">Predictions for today</a>
+					<a href="">Predictions for tomorrow</a>
+					<a href="">Predictions for yesterday</a>
+					<a href="">Predictions for England Premier League</a>
+					<a href="">Predictions for Spain LaLiga</a>
+					<a href="">Predictions for Germany Bundesliga</a>
+					<a href="">Predictions for Italy Serie A</a>
+					<a href="">Predictions for France Ligue 1</a>
+				</div>
+				<div class="another ft1">
+					<h3>ANOTHER</h3>
+					<a href="">News</a>
+					<a href="">Player Injuried & Suspension</a>
+					<a href="">Lineups History</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-wrapper-2">
+		<div class="wrapper">
+			<div class="footer2">
+				<p>This website includes <div class="adversmore">ADVERTISING</div></p>
+			</div>
+		</div>
+	</div>
+	<div class="footer-wrapper-3">
+		<div class="wrapper">
+			<div class="footer3">
+				<a href="" class="logo">
+					<img src="img/Brands_logo/New Logo FollowBet-1.svg" alt="logo 4llowbet">
+				</a>	
+			</div>
+		</div>
+	</div>		
+	<div class="footer-wrapper-4">
+		<div class="wrapper">
+			<div class="footer4">
+				<p>Copyright © 2022-2023 4llowbet.com All rights reserved.</p>	
+			</div>
+		</div>
+	</div>
+
+	<script>
+		$('#calendar_picker div').datepicker({
+			todayHighlight: true
+		});
+	</script>
+</body>
+
+</html>
